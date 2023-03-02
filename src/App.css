@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.expired-notice {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #ff0000;
+}
+
+.show-counter .countdown > p {
+  margin: 0;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+/* Login page styling */
+.login_page {
+  background-color: black;
+}
+.app_name {
+  padding: 25px;
+  background-color: black;
+  color: white;
+}
+.app_name span {
+  color: green;
+}
+.sign_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+}
+.login_img {
+  width: 100vw;
+  height: 86vh;
+  object-fit: cover;
+}
+
+.login-with-google-btn {
+  min-width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  border: 2px solid rgb(155, 232, 172);
+  border-radius: 9999px;
+  position: absolute;
+  background-color: white;
+}
+.login-with-google-btn:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  background-color: rgb(155, 232, 172);
+}
+/* Sign Out Screen Design */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px 50px 10px 50px;
+}
+.app_name_sign_out {
+  padding-left: 50px;
+}
+.app_name_sign_out span {
+  color: green;
+}
+.sign_out {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+.user_name {
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+.sign_out_btn {
+  padding: 5px 15px 5px 15px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  border: 1px solid white;
+  border-radius: 9999px;
+  background-color: white;
+}
+.sign_out_btn:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
